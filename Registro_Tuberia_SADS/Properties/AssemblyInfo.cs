@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Registro_Tuberia_SADS")]
-[assembly: AssemblyDescription("Sistema de registro de tuberia en soldadura internay externa.")]
+[assembly: AssemblyTitle("Admin_Registro_Tuberia_SADS")]
+[assembly: AssemblyDescription("Administrador del Sistema de registro de tuberia en soldadura internay externa.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Tubacero")]
-[assembly: AssemblyProduct("Registro_Tuberia_SADS")]
+[assembly: AssemblyProduct("Admin_Registro_Tuberia_SADS")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -8,13 +8,13 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Registro_Tuberia_SADS</RootNamespace>
-    <AssemblyName>Registro_Tuberia_SADS</AssemblyName>
+    <AssemblyName>Admin_Registro_Tuberia_SADS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>ftp://10.10.20.15/app_operador/</PublishUrl>
+    <PublishUrl>ftp://10.10.20.15/app_admin_operador/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -24,13 +24,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://10.10.20.15/app_operador/</InstallUrl>
-    <ProductName>REGISTRO DE TUBERIA</ProductName>
+    <InstallUrl>http://10.10.20.15/app_admin_operador/</InstallUrl>
+    <ProductName>ADMIN REGISTRO DE TUBERIA</ProductName>
     <PublisherName>JGM</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2.0.1.%2a</ApplicationVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -73,7 +73,7 @@
     </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Bartkowalski-1960-Matchbox-Cars-Pipe-Truck.ico</ApplicationIcon>
+    <ApplicationIcon>Snow-Trac Tractor.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -118,6 +118,7 @@
     <Compile Include="frmAPIs.Designer.cs">
       <DependentUpon>frmAPIs.cs</DependentUpon>
     </Compile>
+    <Compile Include="inputboxvb.cs" />
     <Compile Include="operadores_tabla.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,6 +197,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bartkowalski-1960-Matchbox-Cars-Pipe-Truck.ico" />
+    <Content Include="Snow-Trac Tractor.ico" />
+    <None Include="Resources\disquete.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\search_1029381.ico" />
+    <None Include="Resources\AutoList.png" />
     <None Include="Resources\window_minimize_icon_195498.ico" />
     <None Include="Resources\math_times_icon_195340.ico" />
     <None Include="Resources\53c0f4b59f0df-db9-to-rj45.gif" />

@@ -98,7 +98,7 @@ namespace Registro_Tuberia_SADS
 
                 foreach (var r in results)
                 {
-                    cmbProyecto.Items.Add(r.Pro_ID + "-" + r.Pro_Ordentrabajo);
+                    cmbProyecto.Items.Add(r.Pro_ID + "-" + r.Pro_OrdenTrabajo);
                     
                 }
                 

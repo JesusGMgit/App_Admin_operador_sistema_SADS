@@ -14,7 +14,7 @@ namespace Registro_Tuberia_SADS
         public string Pro_Espesor { get; set; }
         public string Pro_Alambre { get; set; }
         public string Pro_Fundente { get; set; }
-        public string Pro_Ordentrabajo { get; set; }
+        public string Pro_OrdenTrabajo { get; set; }
         public string Pro_Especificacion { get; set; }
         public string Pro_WPS { get; set; }
     }

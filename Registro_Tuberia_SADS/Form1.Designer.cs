@@ -117,7 +117,7 @@
             // 
             // tbpOperador
             // 
-            this.tbpOperador.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tbpOperador.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tbpOperador.Controls.Add(this.btnAPIs);
             this.tbpOperador.Controls.Add(this.btnActivarEdicion);
             this.tbpOperador.Controls.Add(this.lblIDp);
@@ -143,14 +143,12 @@
             // 
             this.btnAPIs.BackgroundImage = global::Registro_Tuberia_SADS.Properties.Resources.business_help_support_service_customer_icon_231900;
             this.btnAPIs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAPIs.Enabled = false;
-            this.btnAPIs.Location = new System.Drawing.Point(15, 244);
+            this.btnAPIs.Location = new System.Drawing.Point(402, 43);
             this.btnAPIs.Name = "btnAPIs";
-            this.btnAPIs.Size = new System.Drawing.Size(44, 39);
+            this.btnAPIs.Size = new System.Drawing.Size(62, 53);
             this.btnAPIs.TabIndex = 104;
             this.btnAPIs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAPIs.UseVisualStyleBackColor = true;
-            this.btnAPIs.Visible = false;
             this.btnAPIs.Click += new System.EventHandler(this.btnAPIs_Click);
             // 
             // btnActivarEdicion
@@ -418,7 +416,7 @@
             this.txbFecha.Name = "txbFecha";
             this.txbFecha.Size = new System.Drawing.Size(127, 26);
             this.txbFecha.TabIndex = 31;
-            this.txbFecha.Text = "yyyy/MM/dd";
+            this.txbFecha.Text = "dd/MM/yyyy";
             this.txbFecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblEspesor
@@ -716,9 +714,9 @@
             this.lblTituloTuberia.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloTuberia.Location = new System.Drawing.Point(110, 3);
             this.lblTituloTuberia.Name = "lblTituloTuberia";
-            this.lblTituloTuberia.Size = new System.Drawing.Size(339, 39);
+            this.lblTituloTuberia.Size = new System.Drawing.Size(341, 39);
             this.lblTituloTuberia.TabIndex = 2;
-            this.lblTituloTuberia.Text = "Registro de Tuberia";
+            this.lblTituloTuberia.Text = "Admin R de Tuberia";
             // 
             // tmrFechaHora
             // 
@@ -726,7 +724,7 @@
             // 
             // PnlTitulo
             // 
-            this.PnlTitulo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.PnlTitulo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PnlTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlTitulo.Controls.Add(this.LblVersion);
             this.PnlTitulo.Controls.Add(this.pictureBox1);

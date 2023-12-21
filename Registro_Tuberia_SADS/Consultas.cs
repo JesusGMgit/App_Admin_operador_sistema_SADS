@@ -36,12 +36,19 @@ namespace Registro_Tuberia_SADS
            return respuesta_post= cliente_consulta.PostAsync(url, contenido).Result.ToString();
         }
 
-        public static string Update_API(string url_update, StringContent contenidp_update)
+        public static string Update_API(string url_update, StringContent contenido_update)
         {
             string respuesta_update;
-
-            respuesta_update = cliente_consulta.PutAsync(url_update, contenidp_update).ToString();
+           
+            respuesta_update = cliente_consulta.PutAsync(url_update, contenido_update).ToString();
             return respuesta_update;
+        }
+
+        public static string Delete_API(string url_delete)
+        {
+            string respuesta_delete;
+            respuesta_delete = cliente_consulta.DeleteAsync(url_delete).ToString();
+            return respuesta_delete;
         }
     }
 }

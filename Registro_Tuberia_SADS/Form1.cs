@@ -28,7 +28,7 @@ namespace Registro_Tuberia_SADS
         public char[] p_permitidas_tubo_placa = { '-', '0','1', '2', '3', '4', '5', '6', '7', '8', '9', (char)Keys.Back };
         public char[] p_permitidas_lote_alambre = { '/','-', '0', '1','2', '3', '4', '5', '6', '7', '8', '9', (char)Keys.Back };
         //Directory.GetCurrentDirectory() @"C:\"
-        public string version_app = "2.0.1.0";
+        public string version_app = "1.0.2.0";
 
         public frmPrincipal()
         {
@@ -334,8 +334,11 @@ namespace Registro_Tuberia_SADS
             p_numero_registros_actual = Properties.Settings.Default.Gnumero_registros_respaldo;
             p_numero_archivo_respaldo = Properties.Settings.Default.Gnumero_archivo_respaldo;
             p_ruta_archivo_respaldo = Properties.Settings.Default.Gpath_archivotexto;
+            //si no se tien ruta para el respaldo se aigna una de default
             if(p_ruta_archivo_respaldo == "")
                 p_ruta_archivo_respaldo = "C:\\Users\\Public";
+
+            //iniciar objetos en el formulario
             LblVersion.Text = version_app;
             Cargar_datos_proyectos();
             btnGuardar.Enabled = false;
@@ -343,7 +346,7 @@ namespace Registro_Tuberia_SADS
             tbcPrincipal.Height = 295;
             tbcPrincipal.Location = new Point(6, 5);
             Desabilitar_tuberia();
-            btnActivarEdicion.Visible = false;
+            //btnActivarEdicion.Visible = false;
             btnActivarEdicion.Enabled = false;
             btnDatosTuberia.Visible = false;
             txbFecha.Enabled = false;
@@ -394,7 +397,7 @@ namespace Registro_Tuberia_SADS
                     foreach (var r in results_p)
                     {
                         lblNombreProyecto.Text = r.Pro_Nombre;
-                        lblOrdentrabajo.Text = r.Pro_Ordentrabajo;
+                        lblOrdentrabajo.Text = r.Pro_OrdenTrabajo;
                         lblTipoalambre.Text = r.Pro_Alambre;
                         lblTipoFundente.Text = r.Pro_Fundente;
                         lblEspecificacion.Text = r.Pro_Especificacion;
@@ -536,6 +539,21 @@ namespace Registro_Tuberia_SADS
         }
         #endregion
 
+        private void btnAPIs_Click(object sender, EventArgs e)
+        {
+            /*string valor = "CONTRASEÑA";
+            string contraseña = inputboxvb.InputBox("CONTRASEÑA", "ESCRIBE", ref valor);
+
+            if (contraseña == "SADS2023")
+            {
+                frmAPIs frm = new frmAPIs();
+                frm.ShowDialog();
+            }*/
+
+            frmAPIs frm = new frmAPIs();
+            frm.ShowDialog();
+
+        } 
         //_________________________________________________________________
         #region funciones de los botones
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -631,6 +649,10 @@ namespace Registro_Tuberia_SADS
                     btnGuardar.Enabled = true;
                     Habilitar_tuberia();
                     lblMensajeerror.Text = "Hablitada pestaña de registro de Tuberia";
+                    btnActivarEdicion.Enabled = true;
+                    btnActivarEdicion.Visible = true;
+                    btnAPIs.Enabled = true;
+                    btnAPIs.Visible = true;
 
                 }
                 else
@@ -660,12 +682,9 @@ namespace Registro_Tuberia_SADS
                 lblMensajeerror.Text = "Folio no registrado";
             }
 
-            if (txbFolio.Text == "554433")
+           /* if (txbFolio.Text == "554433")
             {
-                btnActivarEdicion.Enabled = true;
-                btnActivarEdicion.Visible = true;
-                btnAPIs.Enabled = true;
-                btnAPIs.Visible = true;
+                
 
             }
             else
@@ -674,7 +693,7 @@ namespace Registro_Tuberia_SADS
                 btnActivarEdicion.Visible = false;
                 btnAPIs.Enabled = false;
                 btnAPIs.Visible = false;
-            }
+            }*/
         }
         private void btnSalirOperador_Click(object sender, EventArgs e)
         {
@@ -741,11 +760,7 @@ namespace Registro_Tuberia_SADS
         #endregion
 
         #region funciones no usadas y que si borro no sirve el formulario
-        private void btnAPIs_Click(object sender, EventArgs e)
-        {
-            frmAPIs frm = new frmAPIs();
-            frm.ShowDialog();
-        }
+       
         private void frmPrincipal_Validated(object sender, EventArgs e)
         {
             
